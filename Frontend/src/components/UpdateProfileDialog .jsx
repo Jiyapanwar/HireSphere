@@ -5,6 +5,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
 } from "./ui/dialog";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
@@ -85,6 +86,10 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
         >
           <DialogHeader>
             <DialogTitle>Update Profile</DialogTitle>
+            <DialogDescription>
+              Fill in your updated information below. This will be visible to
+              recruiters.
+            </DialogDescription>
           </DialogHeader>
           <form onSubmit={submitHandler}>
             <div className="grid gap-4 py-4">
